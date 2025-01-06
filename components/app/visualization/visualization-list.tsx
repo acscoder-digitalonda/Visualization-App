@@ -105,7 +105,7 @@ export function VisualizationList({ visualizations: initialVisualizations }: Vis
                       variant="ghost"
                       size="icon"
                       className="h-12 w-12 rounded-full bg-[#7c4dff]/10 hover:bg-[#7c4dff]/20 text-[#7c4dff]"
-                      onClick={() => setPlayingAudio(visualization.audio_link)}
+                      onClick={() => setPlayingAudio(visualization.audio_link ?? null)}
                     >
                       <Play className="w-6 h-6" />
                     </Button>

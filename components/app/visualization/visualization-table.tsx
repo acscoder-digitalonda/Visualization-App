@@ -45,22 +45,22 @@ export function VisualizationTable({
               <TableCell>{visualization.client_challenges}</TableCell>
               <TableCell>{visualization.tone}</TableCell>
               <TableCell>
-                {visualization.audio_url ? (
+                {visualization.audio_link ? (
                   <div className="flex items-center gap-2">
                     <Button
                       variant="ghost"
                       size="icon"
                       onClick={() => onPlayAudio(
-                        playingAudio === visualization.audio_url 
+                        playingAudio === visualization.audio_link 
                           ? null 
-                          : visualization.audio_url!
+                          : visualization.audio_link!
                       )}
                     >
                       <Play className="w-4 h-4" />
                     </Button>
-                    {playingAudio === visualization.audio_url && (
+                    {playingAudio === visualization.audio_link && (
                       <AudioPlayer
-                        url={visualization.audio_url}
+                        url={visualization.audio_link}
                         onEnded={() => onPlayAudio(null)}
                       />
                     )}
