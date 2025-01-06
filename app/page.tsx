@@ -5,8 +5,7 @@ import { Card } from "@/components/ui/card";
 import {
   Carousel,
   CarouselContent,
-  CarouselItem,
-  useCarousel,
+  CarouselItem
 } from "@/components/ui/carousel";
 import { Mic, Sparkles, Wind } from "lucide-react";
 import Link from "next/link";
